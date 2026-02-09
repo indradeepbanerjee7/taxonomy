@@ -1,0 +1,7 @@
+{
+  "name": "PowerTaxonomy",
+  "description": "An advanced taxonomy comparison tool that analyzes product SKUs against competitors and Amazon guidelines using multimodal AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

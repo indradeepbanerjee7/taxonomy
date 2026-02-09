@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerTaxonomy | AI-Driven Amazon SKU Intelligence & SEO Content Optimization</title>
+    <meta name="description" content="Optimize your Amazon product listings with PowerTaxonomy. Our AI-driven SKU intelligence tool benchmarks competitors and ensures compliance with Amazon content guidelines.">
+    <meta name="keywords" content="Amazon SKU optimization, product taxonomy, competitor benchmarking, Amazon SEO, retail intelligence, content compliance, eCommerce optimization">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --neon-cyan: #00f2ff;
+        --neon-blue: #0047ff;
+        --space-dark: #020617;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--space-dark);
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .futuristic-bg {
+        background-image: 
+          radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+        background-size: 40px 40px;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .neon-border-hover:hover {
+        border-color: var(--neon-cyan);
+        box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+      }
+      .high-contrast-text {
+        color: #ffffff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      }
+      .animate-pulse-slow {
+        animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+      @media print {
+        body { background: white !important; color: black !important; }
+        .print-hidden { display: none !important; }
+        .glass-card { background: white !important; border: 1px solid #ccc !important; backdrop-filter: none !important; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      .animate-scaleIn {
+        animation: scaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes scaleIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom": "https://esm.sh/react-dom@^19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="futuristic-bg min-h-screen">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
