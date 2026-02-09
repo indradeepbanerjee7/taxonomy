@@ -5,13 +5,12 @@
 ## 1. Project Goal
 **PowerTaxonomy** is an intelligent content optimization platform designed for modern e-commerce teams. It solves the problem of manual SKU auditing by using multimodal AI to benchmark product data against competitors and marketplace guidelines, ensuring compliance and maximizing search visibility.
 
-## 2. Deliverables Breakdown
+## 2. What is the Tool Trying to Achieve?
 
-### 🎥 Loom Walkthrough
-- **Demo Content**: A 3-6 minute video demonstrating the end-to-end workflow:
+### 🎥 Product Journey
   - **Setup**: Configuring the retailer (e.g., Amazon) and uploading raw CSV data + PDF guidelines.
   - **Analysis**: Selecting a target SKU and viewing the real-time competitive analysis (Rank, Content Depth, Visual score).
-  - **Optimization**: The AI generating optimized Titles, Bullets, and Descriptions.
+  - **Optimization**: The AI generating optimized Titles, Bullets, and Descriptions. This is inline with the Amazon Guidelines. The Product also highlights where-ever exitent details are out of policy and highlights them along with recommendations for improvement. 
   - **Export**: Downloading the final "production-ready" CSV row.
 - **Reasoning**: Explains the architectural choice of using a client-side React app for speed and privacy, with a serverless-friendly AI integration.
 
@@ -28,9 +27,12 @@
 
 ### 🧪 Evaluation Set (`sample_eval_set/`)
 - **Purpose**: To allow immediate testing of the application without needing proprietary data.
-- **Contents**:
-  - `sample_product_data.csv`: A formatted CSV with diverse product examples (Electronics, Grocery).
-  - `sample_guidelines.txt`: A standard compliance document outlining text and image rules.
+
+### How is this Tool Beneficial in an Ecommerce Business Context 
+- **Efficiency**: In Ecommerce Marketplaces one of the key challenges is sellers uploading Cataloging Content that is non standardized. This not only hurts their search potential, but also proves to be difficult to map to a knowledge graph/Vector DB for easy retrieval. Further, non standaridized Catalog has the added problem of using too much storage. Changing raw files for 100M SKUs manually is next to impossible and current Ecommerce Platforms depend on suppliers updating the doc, through inducements. However, leveraging an AI ensures that the whole work is automated, standardized and TAT becomes highly compressed.
+
+ ### Further Improvements 
+ - **Scale-Up**: This is a prototype tool that only updates the selected SKU. However to deploy this for a platform such as Amazon would need industrial grade servers, budget and parallel processing to batch process 1M SKU/hour. That is an engineering challenge that is out of scope for this Prototype. 
 
 ---
 
